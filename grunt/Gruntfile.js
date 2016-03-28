@@ -30,9 +30,25 @@ module.exports = function(grunt) {
                 },
             },
         },
+        //minificar javascript
+        uglify: {
+            options: {
+                beautify: false //modo depuracion
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '../js',
+                    src: ['**/*.js','!**/*.min.js'],
+                    dest: '../dist/js',
+                    ext: '.min.js'
+                }]
+            },
+        },
     });
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 };

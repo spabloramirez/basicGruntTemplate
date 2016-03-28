@@ -20,6 +20,11 @@ npm install
 ```
 grunt sass 
 ```
+- _Minificar JavaScript_
+
+```
+grunt uglify 
+```
 - _Monitorizar cambios_
 
 ```

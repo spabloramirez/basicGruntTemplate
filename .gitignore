@@ -27,6 +27,7 @@ Thumbs.db
 
 # Folders to ignore
 node_modules
+dist
 
 # source:https://github.com/github/gitignore
 .sass-cache/

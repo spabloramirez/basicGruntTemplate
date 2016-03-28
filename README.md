@@ -15,8 +15,13 @@ npm install
 ```
 
 ## Tareas
-_1. Compilar sass_
+- _Compilar sass_
 
 ```
 grunt sass 
+```
+- _Monitorizar cambios_
+
+```
+grunt watch
 ```

@@ -8,6 +8,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         // Task configuration.
+        //compilar sass
         sass: {
             dist: {
                 files: [{
@@ -19,8 +20,19 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        //monitorizar cambios en sass
+        watch: {
+            css: {
+                files: '../sass/**/*.scss',
+                tasks: ['sass'],
+                options: {
+                    livereload: true,
+                },
+            },
+        },
     });
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 };

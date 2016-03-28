@@ -13,9 +13,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '../sass',
+                    cwd: 'sass',
                     src: ['main.scss'],
-                    dest: '../dist/css',
+                    dest: 'dist/css',
                     ext: '.css'
                 }]
             }
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         //monitorizar cambios en sass
         watch: {
             css: {
-                files: '../sass/**/*.scss',
+                files: 'sass/**/*.scss',
                 tasks: ['sass'],
                 options: {
                     livereload: true,
@@ -38,9 +38,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '../js',
+                    cwd: 'js',
                     src: ['**/*.js','!**/*.min.js'],
-                    dest: '../dist/js',
+                    dest: 'dist/js',
                     ext: '.min.js'
                 }]
             },

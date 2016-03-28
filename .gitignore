@@ -1,0 +1,33 @@
+# source:https://github.com/twbs/bootstrap/blob/master/.gitignore
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*~
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+
+# Folders to ignore
+node_modules
+
+# source:https://github.com/github/gitignore
+.sass-cache/
+*.css.map
